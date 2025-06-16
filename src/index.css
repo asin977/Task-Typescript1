@@ -14,3 +14,11 @@ code {
 
 @import url("https://fonts.googleapis.com/css?family=Tangerine");
 @import url("https://fonts.googleapis.com/css?family=Inconsolata");
+
+html {
+  box-sizing: border-box;
+}
+*,*::after,*::before {
+  box-sizing: inherit;
+}
+

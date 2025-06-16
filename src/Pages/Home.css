@@ -1,3 +1,26 @@
 .heading  {
+    font-size:30px;
+    background-color:black;
+    padding:20px;
+    margin-top:0px;
+    color:#fff;
+    font-family:'Inconsolata';
+}
+.stud-data {
+    list-style-type:none;
+}
+.teacher {
+    font-family:'Inconsolata';
     font-size:20px;
+}
+.students {
+    font-family:'Inconsolata';
+    font-size:20px;
+}
+.class {
+    font-family:'Inconsolata';
+    font-size:20px;
+}
+.details {
+    list-style:none;
 }
