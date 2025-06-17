@@ -20,9 +20,9 @@ export function Home(){
       </h1>
       <h3 className='students'>Student's names and marks obtained:
         <ul className='data'>
-        {data.students.map((student) => (
+            {data.students.map((student) => (
           <li key={student.id} className='stud-list'>
-            <span className='name'><strong>{student.name}:</strong></span>
+            <span className='red-text'><strong>{student.name}:</strong></span>
             <ul className='marks'>
               {student.marks.map((subject, index) => (
                 <li key={index} className='indi-mark'>

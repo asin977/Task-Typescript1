@@ -1,4 +1,3 @@
-
   export type Subject = {
     subject: string;
     mark: number;
