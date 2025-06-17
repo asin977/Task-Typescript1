@@ -1,7 +1,7 @@
 import React from 'react'
 import { Subject , Student ,ClassData } from './types';
 import classdataJson from '../MyData/data.json';
-import { printClassName,printTeachersName ,studentId,studentNames } from './utils';
+import { printClassName,printTeachersName ,studentId,studentmark,studentNames } from './utils';
 
 const data : ClassData = classdataJson as ClassData;
 
@@ -10,6 +10,7 @@ export function Main() {
    const teachersInfo = printTeachersName();
    const studentsInfo = studentNames();
    const studentsid = studentId(); 
+   const studentsMark = studentmark();
    
   return (
     <div className='cont'>
@@ -27,15 +28,16 @@ export function Main() {
               <li className='quest-1'>Write a function to print the names of all students in the class.</li>
              <ul className='information'>
                <li style={{color:'yellow',fontWeight:'900'}} className='info'>{studentsInfo}</li>
+             
              </ul>
             </ul>
             <ul>
                <li className='quest-1'>Write a function to print the IDs of all the students in the class.</li>
-               <span>{studentsid}</span>
+               <span style={{color:'yellow',fontWeight:'900'}} >{studentsid}</span>
             </ul>
             <ul>
                <li className='quest-1'>Write a function to print the marks of a specific student in all subjects.</li>
-               <span></span>
+               <span>{}</span>
             </ul>
         </div>
     </div>

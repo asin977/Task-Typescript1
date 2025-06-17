@@ -20,3 +20,6 @@ export const studentId = () => {
     return data.students.map(student => student.id );
 }
 
+export const studentmark = () => {
+    // return data.students.map((subject,index) => subject.marks);
+}
