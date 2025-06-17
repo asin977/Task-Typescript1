@@ -4,16 +4,19 @@ import classdataJson from '../MyData/data.json';
 
 const data : ClassData = classdataJson as ClassData;
 
-export const PrintClassName = () => {
+export const printClassName = () => {
     return {class:data.name}
 }
 
-export const  PrintTeachersName =()=> {
+export const  printTeachersName =()=> {
     return {Name:data.teachersName}
 }
 
-export const StudentNames = () => {
-    return {}
-   
+export const studentNames = () => {
+    return data.students.map(student => student.name);
+};
+  
+export const studentId = () => {
+    return data.students.map(student => student.id );
 }
 
