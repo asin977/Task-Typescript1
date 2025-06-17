@@ -98,4 +98,7 @@ li {
     align-items: center;
     list-style-type: disc;
 }
-
+a {
+    text-decoration: none;
+    color:black;
+}

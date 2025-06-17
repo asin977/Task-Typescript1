@@ -1,19 +1,22 @@
 import React from 'react'
 import { Subject , Student ,ClassData } from './types';
+import { Link } from 'react-router-dom';
 import classdataJson from '../MyData/data.json';
 import { printClassName,printTeachersName ,studentId,studentmark,studentNames } from './utils';
 
 const data : ClassData = classdataJson as ClassData;
 
 export function Main() {
+   
    const classInfo = printClassName();
    const teachersInfo = printTeachersName();
    const studentsInfo = studentNames();
    const studentsid = studentId(); 
    const studentsMark = studentmark();
-   
+    
   return (
     <div className='cont'>
+      <Link to='/home' className='link'>Home</Link>
         <div className='questions'>
             <h1 className='head'>Question Container</h1>
             <ul>
@@ -41,6 +44,7 @@ export function Main() {
             </ul>
         </div>
     </div>
+   
   )
 }
 

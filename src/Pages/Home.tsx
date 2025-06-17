@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 import { Header } from '../components/Header';
 import { Body } from '../components/Body';
 
-type link = {
+type Link = {
   to : String;
 }
 
@@ -18,9 +18,8 @@ export function Home(){
       <h1 className='heading '>Students List Panel</h1>
       <Header />
       <Body />
-      {/* <link to='/main'>main</link> */}
+      
+      <Link to='/main'>Questions Container ➡️</Link>
     </div> 
-  
-    
   );
 };
