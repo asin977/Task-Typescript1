@@ -1,14 +1,14 @@
 import React from 'react';
 import classDataJson from '../MyData/data.json';
 import { Subject , Student ,ClassData } from '../Pages/types'
-const data : ClassData = classDataJson;
+const studentdata : ClassData = classDataJson;
 
 export function Body() {
   return (
     <div>
       <h3 className='students'>Student's names and marks obtained:
         <ul className='data'>
-            {data.students.map((student) => (
+            {studentdata.students.map((student) => (
           <li key={student.id} className='stud-list'>
             <span className='red-text'><strong>{student.name}:</strong></span>
             <ul className='marks'>

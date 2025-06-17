@@ -15,7 +15,9 @@
     students: Student[];
   };
   
-export type link = {
+  export type Link = {
   to : String;
-}
+  };
+
+  
 

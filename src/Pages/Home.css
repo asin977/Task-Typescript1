@@ -101,4 +101,6 @@ li {
 a {
     text-decoration: none;
     color:black;
+    font-family:'Inconsolata';
+    font-weight:bold;
 }

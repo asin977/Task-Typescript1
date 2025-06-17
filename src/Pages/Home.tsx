@@ -18,8 +18,9 @@ export function Home(){
       <h1 className='heading '>Students List Panel</h1>
       <Header />
       <Body />
+      <Link to='/page3'>Questions Container ➡️</Link>
       
-      <Link to='/main'>Questions Container ➡️</Link>
     </div> 
   );
 };
+
