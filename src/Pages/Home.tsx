@@ -1,24 +1,8 @@
 import React from 'react';
 import classDataJson from '../MyData/data.json';
 import "./Home.css";
+import {Subject,Student,ClassData} from './types'
 
-
-type Subject = {
-  subject: string;
-  mark: number;
-};
-
-type Student = {
-  name: string;
-  id: string;
-  marks: Subject[];
-};
-
-type ClassData = {
-  name: string;
-  teachersName: string;
-  students: Student[];
-};
 
 const data : ClassData = classDataJson as ClassData;
 

@@ -12,3 +12,10 @@ export function PrintTeachersName() {
     return {Name:data.teachersName}
 }
 
+export function StudentNames() {
+    return {
+        
+    }
+   
+}
+
