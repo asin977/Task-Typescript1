@@ -2,6 +2,7 @@ import React from 'react';
 import classDataJson from '../MyData/data.json';
 import "./Home.css";
 
+
 type Subject = {
   subject: string;
   mark: number;
@@ -25,20 +26,32 @@ export function Home(){
   return (
     <div>
       <h1 className='heading'>Students Panel List</h1>
-      <div className='main-container'>
-        <h1 className='class'>CLASS:{data.name}</h1>
-        <h2 className='teacher'>TEACHER: {data.teachersName}</h2>
-        <h3 className='students'>Students:
-      <ul className='stud-data'>
-         <li className='details'>
-            
-         </li>
-      </ul>
-    </h3>
-  </div> 
-    </div>
+        <div className='main-container'>
+          <h1 className='class'><h1 className='class'>
+            CLASS: <span className='red-text'>{data.name}</span>
+          </h1>
+          <h2 className='teacher'>
+              TEACHER: <span className='red-text'>{data.teachersName}</span>
+          </h2>
+      </h1>
+      <h3 className='students'>Student's names and marks obtained:
+        <ul className='data'>
+        {data.students.map((student) => (
+          <li key={student.id} className='stud-list'>
+            <span className='name'><strong>{student.name}:</strong></span>
+            <ul className='marks'>
+              {student.marks.map((subject, index) => (
+                <li key={index} className='indi-mark'>
+                  {subject.subject}: {subject.mark}
+                </li>
+              ))}
+            </ul>
+          </li>
+          ))}
+        </ul>
+      </h3>
+    </div> 
+  </div>
     
   );
 };
-
-

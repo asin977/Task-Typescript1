@@ -15,7 +15,8 @@
 }
 .students {
     font-family:'Inconsolata';
-    font-size:20px;
+    font-size:18px;
+    margin-left:-3px;
 }
 .class {
     font-family:'Inconsolata';
@@ -23,4 +24,46 @@
 }
 .details {
     list-style:none;
+}
+.red-text {
+    color:red;
+  }
+  
+.data {
+    list-style-type:none;
+    padding:25px;
+    display:flex;
+    flex-direction: column;
+    margin-top:0;
+    
+}
+li {
+    list-style-type:none;
+    font-weight:200;
+}
+.stud-list {
+    display:flex;
+    align-items: flex-start;
+    /* flex-wrap: wrap; */
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    margin-top:24px;
+    border:1px solid;
+    
+}
+.name {
+    color:red;
+    font-weight:bold;
+}
+.marks {
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content: center;
+    padding:0px;
+    
+}
+.indi-mark {
+    margin-left:12px;
 }
