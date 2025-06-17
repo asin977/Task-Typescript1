@@ -44,15 +44,12 @@ li {
 .stud-list {
     display:flex;
     align-items: flex-start;
-    /* flex-wrap: wrap; */
-    /* flex-direction: column; */
     justify-content: center;
     align-items: center;
     margin-top:24px;
     border:1px solid;
     padding:15px;
     text-align:justify;
-    
 }
 .marks {
     display:flex;
@@ -103,4 +100,24 @@ a {
     color:black;
     font-family:'Inconsolata';
     font-weight:bold;
+}
+
+/* question bank styles */
+
+.question-bank {
+    padding:22px;
+    font-weight:400;
+    font-family:'Inconsolata';
+    text-align:center;
+    border-bottom:1px solid #fff;
+    background-color:black;
+    color:#fff;
+    padding-left:0px;
+    font-size:18px;
+}
+.quest-cont {
+    padding:0px;
+}
+.head {
+    padding:20px;
 }

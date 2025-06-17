@@ -23,3 +23,4 @@ export const studentmark = (studentName: string) => {
   const student = data.students.find(s => s.name === studentName);
   return student ? student.marks : null;
 }
+
