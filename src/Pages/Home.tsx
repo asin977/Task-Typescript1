@@ -12,7 +12,7 @@ export function Home(){
   return (
     <div>
     <h1 className='heading '>Students List Panel</h1>
-    <Link to='/page3'>Questions Container ➡️</Link>
+    <Link to='/questions'>Questions Container ➡️</Link>
       <Header />
       <Body />
       
