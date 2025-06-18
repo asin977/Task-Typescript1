@@ -3,24 +3,16 @@ import classdataJson from '../MyData/data.json';
 
 const data: ClassData = classdataJson;
 
-export const printClassName = () => {
-  return { class: data.name };
-};
+export const printClassName = (): string => data.name;
 
-export const printTeachersName = () => {
-  return { Name: data.teachersName };
-};
+export const printTeachersName = (): string => data.teachersName;
 
-export const studentNames = () => {
-  return data.students.map(student => student.name);
-};
+export const studentNames = (): string => data.students.map(s => s.name).join(', ');
 
-export const studentId = () => {
-  return data.students.map(student => student.id);
-};
+export const studentId = (): string => data.students.map(s => s.id).join(', ');
 
-export const studentmark = (studentName: string) => {
+export const studentmark = (studentName: string): string => {
   const student = data.students.find(s => s.name === studentName);
-  return student ? student.marks : null;
-}
-
+  if (!student) return 'Student not found';
+  return student.marks.map(m => `${m.subject}`).join(', ');
+};

@@ -6,10 +6,6 @@ import { Link } from 'react-router-dom';
 import { Header } from '../components/Header';
 import { Body } from '../components/Body';
 
-type Link = {
-  to : String;
-}
-
 const data : ClassData = classDataJson;
 
 export function Home(){
@@ -19,7 +15,6 @@ export function Home(){
       <Header />
       <Body />
       <Link to='/page3'>Questions Container ➡️</Link>
-      
     </div> 
   );
 };
