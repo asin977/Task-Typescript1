@@ -16,3 +16,4 @@ export const studentmark = (studentName: string): string => {
   if (!student) return 'Student not found';
   return student.marks.map(m => `${m.subject}`).join(', ');
 };
+

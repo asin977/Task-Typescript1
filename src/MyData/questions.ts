@@ -11,7 +11,7 @@ type QuestionEntry = {
   answer: string | number;
 };
 
-export const localQuestions: QuestionEntry[] = [
+export const questions: QuestionEntry[] = [
   {
     question: "Write a function to print the name of the class: 'Class A'.",
     answer: printClassName() 
