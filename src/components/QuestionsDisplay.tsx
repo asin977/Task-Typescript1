@@ -1,5 +1,6 @@
 import React from 'react';
 import { questions } from '../MyData/questions';
+
 import { Link } from 'react-router-dom';
 import '../Pages/Home.css';
 import {QuestionCont} from './QuestionCont';

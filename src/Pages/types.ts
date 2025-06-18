@@ -18,6 +18,9 @@
   export type Link = {
   to : String;
   };
-
+ 
+  export type QuestionData = {
+    question :String
+  }
   
 
