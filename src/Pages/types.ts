@@ -23,4 +23,7 @@
     question :String
   }
   
-
+  export type QuestionDisplay = {
+    question: string;
+    answer: string | number;
+};

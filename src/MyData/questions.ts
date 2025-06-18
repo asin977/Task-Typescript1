@@ -7,19 +7,16 @@ import {
   getStudentMarks,
   getStudentTotalmark,
   getStudentAverageMark,
-  getAverageInSubject
+  getAverageInSubject,
+  getTotalInSubject,
+  highestScorerInSubject,
+  lowestScorerInSubject
   
 } from '../Pages/utils';
 import questionDataJson from '../MyData/questions.json';
-import { types } from 'util';
+import { QuestionDisplay, QuestionData} from  '../Pages/types';
 
-// const  : QuestionDisplay = questionDataJson;
-
-
-type QuestionDisplay = {
-  question: string;
-  answer: string | number;
-};
+// const  :  QuestionData = questionDataJson;
 
 export const questions: QuestionDisplay[] = [
   {
@@ -60,8 +57,15 @@ export const questions: QuestionDisplay[] = [
   },
   {
     question: "Write a function to calculate and print the total marks for all students in a specific subject.",
-    answer: studentsubjectname("Ravi")
+    answer:  getTotalInSubject("English")
   },
-  
+  {
+    question: "Write a function to find and print the student with the highest marks in a specific subject.",
+    answer:  highestScorerInSubject("English")
+  },
+  {
+    question: "Write a function to find and print the student with the lowest marks in a specific subject.",
+    answer: lowestScorerInSubject("English")
+  },
 ];
 

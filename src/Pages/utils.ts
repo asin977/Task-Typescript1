@@ -2,7 +2,6 @@ import { ClassData } from './types';
 import classdataJson from '../MyData/data.json';
 import React from 'react'
 
-
 type Names = {
     Name : string
 }
@@ -53,7 +52,38 @@ export const getAverageInSubject = (subject:string): string => {
   return avg.toFixed(2);
 }
 
-export const getTotalInSubject = () => {
-
+export const getTotalInSubject = (subject:string) : string => {
+  const subjectMarks = studentdata.students.map(s => {
+    const mark = s.marks.find(m => m.subject === subject);
+    return mark?.mark ?? 0;
+  });
+  const total = subjectMarks.reduce((a,b)=> a + b,0 );
+  return total.toFixed(2);
 }
+
+export const highestScorerInSubject = (subject: string): string => {
+  let topStudent = '';
+  let topMark = 0;
+  for (const s of studentdata.students) {
+    const m = s.marks.find(m => m.subject === subject);
+    if (m && m.mark > topMark) {
+      topMark = m.mark;
+      topStudent = s.name;
+    }
+  }
+  return topStudent || 'No data';
+};
+
+export const lowestScorerInSubject = (subject:string) : string => {
+  let lowestAcheiver = '';
+  let lowMark = Infinity;
+  for (const s of studentdata.students) {
+    const m = s.marks.find(m => m.subject === subject);
+    if (m && m.mark < lowMark) {
+      lowMark = m.mark;
+      lowestAcheiver  = s.name;
+    }
+  }
+  return lowestAcheiver  || 'No data';
+};
 
