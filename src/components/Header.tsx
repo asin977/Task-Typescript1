@@ -13,8 +13,8 @@ export function Header() {
               TEACHER: <span className='red-text'>{Studentdata.teachersName}</span>
           </h2>
          </h1>
-    </div>
-   
+    </div>  
+  
   )
 }
 

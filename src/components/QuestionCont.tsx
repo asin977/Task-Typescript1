@@ -13,10 +13,10 @@ export function QuestionCont() {
               {q.answer}
             </div>
           </li>
-        ))}
+        ))} 
         </ul>
     </div>
-  )
+  ) 
 }
 
 export default QuestionCont

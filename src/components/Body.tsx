@@ -14,7 +14,7 @@ export function Body() {
             <ul className='marks'>
               {student.marks.map((subject, index) => (
                 <li key={index} className='indi-mark'>
-                  {subject.subject}: {subject.mark}
+                  ‣ {subject.subject}: {subject.mark}
                 </li>
               ))}
             </ul>

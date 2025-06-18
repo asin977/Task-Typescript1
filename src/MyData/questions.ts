@@ -10,7 +10,15 @@ import {
   getAverageInSubject,
   getTotalInSubject,
   highestScorerInSubject,
-  lowestScorerInSubject
+  lowestScorerInSubject,
+  highestTotalScorer,
+  lowestTotalScorer,
+  subjectWithHighestAverage,
+  subjectWithLowestAverage,
+  classAverage,
+  classTotal,
+  averagePerSubject,
+  totalPerSubject
   
 } from '../Pages/utils';
 import questionDataJson from '../MyData/questions.json';
@@ -67,5 +75,38 @@ export const questions: QuestionDisplay[] = [
     question: "Write a function to find and print the student with the lowest marks in a specific subject.",
     answer: lowestScorerInSubject("English")
   },
+  {
+    question: "Write a function to find and print the student with the highest total marks.",
+    answer: highestTotalScorer()
+  },
+  {
+    question: "Write a function to find and print the student with the lowest total marks.",
+    answer: lowestTotalScorer()
+  },
+  {
+    question: "Write a function to find and print the subject with the highest average marks.",
+    answer: subjectWithHighestAverage()
+  },
+  {
+    question: "Write a function to find and print the subject with the lowest average marks.",
+    answer: subjectWithLowestAverage()
+  },
+  {
+    question: "Write a function to calculate and print the overall average marks for the class.",
+    answer: classAverage ()
+  },
+  {
+    question: "Write a function to calculate and print the overall total marks for the class.",
+    answer: classTotal()
+  },
+  {
+    question: "Write a function to calculate and print the average marks for each subject.",
+    answer: averagePerSubject()
+  },
+  {
+    question: "Write a function to calculate and print the total marks for each subject.",
+    answer: totalPerSubject()
+  },
 ];
+
 

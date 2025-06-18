@@ -15,10 +15,6 @@
     students: Student[];
   };
   
-  export type Link = {
-  to : String;
-  };
- 
   export type QuestionData = {
     question :String
   }
@@ -26,4 +22,4 @@
   export type QuestionDisplay = {
     question: string;
     answer: string | number;
-};
+  };

@@ -11,11 +11,12 @@ const data : ClassData = classDataJson;
 export function Home(){
   return (
     <div>
-      <h1 className='heading '>Students List Panel</h1>
+    <h1 className='heading '>Students List Panel</h1>
+    <Link to='/page3'>Questions Container ➡️</Link>
       <Header />
       <Body />
-      <Link to='/page3'>Questions Container ➡️</Link>
-    </div> 
+      
+    </div>    
   );
 };
 

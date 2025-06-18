@@ -8,11 +8,12 @@ import {QuestionCont} from './QuestionCont';
 export const QuestionsDisplay = () => {
   return (
     <div>
+       <Link to="/" className="link"> ⬅️ Go to Main</Link>
       <h1 className='head'>Question Container</h1>
        <QuestionCont />
-      <Link to="/" className="link">Go to Main</Link>
     </div>
   );
+  
 };
 
 export default QuestionsDisplay;
