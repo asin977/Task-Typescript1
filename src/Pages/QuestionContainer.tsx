@@ -1,13 +1,12 @@
 import React from 'react';
 import { questions } from '../MyData/questions';
-import '../Pages/Home.css';
 
-export function QuestionCont() {
+export function QuestionContainer() {
   return (
     <div>
-        <ul className='quest-cont'>
+        <ul style={{padding:'0px'}}>
         {questions.map((q, index) => (
-          <li className='question-bank' key={index}>
+          <li style={{padding:'22px',backgroundColor:'black',color:'#fff',borderBottom:'1px solid #fff',fontSize:'18px'}} key={index}>
             <p>{q.question}</p>
             <div style={{ color: 'yellow', fontWeight: 'bold', marginTop: '5px' }}>
               {q.answer}
@@ -19,4 +18,4 @@ export function QuestionCont() {
   ) 
 }
 
-export default QuestionCont
+export default QuestionContainer
