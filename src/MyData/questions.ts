@@ -21,10 +21,8 @@ import {
   totalPerSubject
   
 } from '../Pages/utils';
-import questionDataJson from '../MyData/questions.json';
-import { QuestionDisplay, QuestionData} from  '../Pages/types';
 
-// const  :  QuestionData = questionDataJson;
+import { QuestionDisplay, QuestionData} from  '../Pages/types';
 
 export const questions: QuestionDisplay[] = [
   {
