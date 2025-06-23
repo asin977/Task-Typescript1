@@ -1,11 +1,8 @@
 import React from 'react';
-import classDataJson from '../MyData/data.json';
-import {Subject,Student,ClassData} from './types'
 import { Link } from 'react-router-dom';
 import { Header } from '../components/Header';
 import StudentManagementData from '../components/StudentManagementData';
 
-const data : ClassData = classDataJson;
 
 export function Home(){
   return (

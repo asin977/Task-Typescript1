@@ -1,8 +1,8 @@
 import {
   printClassName,
   printTeachersName,
-  studentNames,
-  studentId,
+  getStudentNames,
+  getStudentId,
   studentsubjectname,
   getStudentMarks,
   getStudentTotalmark,
@@ -22,7 +22,7 @@ import {
   
 } from '../Pages/utils';
 
-import { QuestionDisplay, QuestionData} from  '../Pages/types';
+import { QuestionDisplay } from  '../Pages/types';
 
 export const questions: QuestionDisplay[] = [
   {
@@ -35,11 +35,11 @@ export const questions: QuestionDisplay[] = [
   },
   {
     question: "Write a function to print the names of all the students in the class.",
-    answer: studentNames() 
+    answer: getStudentNames() 
   },
   {
     question: "Write a function to print the IDs of all the students in the class.",
-    answer: studentId()
+    answer: getStudentId()
   },
   {
     question: "Write a function to print the subject names for a specific student.",

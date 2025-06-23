@@ -1,6 +1,6 @@
 import React from 'react';
 import classDataJson from '../MyData/data.json';
-import { Subject , Student ,ClassData } from '../Pages/types'
+import { ClassData } from '../Pages/types'
 const studentdata : ClassData = classDataJson;
 
 export function StudentManagementData() {

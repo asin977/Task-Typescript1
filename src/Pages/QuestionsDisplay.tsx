@@ -1,5 +1,4 @@
 import React from 'react';
-import { questions } from '../MyData/questions';
 import { Link } from 'react-router-dom';
 import QuestionContainer from './QuestionContainer';
 
